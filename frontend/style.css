@@ -19,7 +19,23 @@ div.first-most-inner {
 
 body > div.first,
 div.first-most-inner {
-    border-bottom: 10px solid rgb(104, 204, 104);
+      border-bottom: 10px solid rgb(104, 204, 104);
+}
+
+div.first-most-inner::before {
+    content: "A";
+    position: fixed ;
+    display: block ;
+    right: 0vh;
+    bottom: 0vh;
+    width: 50vh;
+    height: 50vh;
+
+    background-color: bisque;
+}
+
+div.first-most-inner::after {
+    content: "B"
 }
 
 div {
@@ -82,7 +98,7 @@ body > div > div > div > div > div > div > div {
 }
 body > div > div > div > div > div > div > div > div {
     
-    background-color: rgb(15, 8, 51);
+    background-color: rgb(149, 145, 172);
     height: 30vh;
     width:30vh;
 
