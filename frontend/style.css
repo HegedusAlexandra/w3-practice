@@ -1,14 +1,66 @@
-body {
+body,
+body *{
+
     margin: 0vh;
-    padding: 4vh;
+    padding: 0vh;
+
+    box-sizing: border-box;
+}
+
+header {
+
+    position:fixed;
+    
+    top: 0%;
+    left: 0%;
+    
+    width:100%;
+    height: 60px;
+    
+    background-color: aquamarine;
+    
+    z-index: 100;
+}
+
+#logo,
+header nav {
+
+    display: inline-block;
+    
+    width: 49%;
+    height: 100%;
+}
+
+header nav a {
+    
+    display: block;
+    
+    width: 100px;
+    height: 100%;
+
+}
+
+header nav button {
+
+    position: absolute;
+    
+    width: 60px;
+    height: 60px;
+    
+    right: 0;
+    top: 0;
+
+    background-color: rgba(230, 119, 75, 0.881);
 }
 
 div.first {
+
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
 
 div.first+div {
+
     border-left: 10px solid rgb(255, 0, 0);
 }
 
@@ -17,32 +69,36 @@ div.first-most-inner {
     border-radius: 50%;
 }
 
-body > div.first,
+body > div.first , 
 div.first-most-inner {
-      border-bottom: 10px solid rgb(104, 204, 104);
+    
+    border-bottom: 10px solid rgb(104, 204, 104);
 }
 
 div.first-most-inner::before {
+    
     content: "A";
     position: fixed ;
     display: block ;
     right: 0vh;
     bottom: 0vh;
-    width: 50vh;
-    height: 50vh;
-
+    width: 100px;
+    height: 100px;
     background-color: bisque;
 }
 
 div.first-most-inner::after {
+    
     content: "B"
 }
 
 div {
+    
     box-sizing: border-box;
 }
 
 div.first-most-inner:hover {
+    
     background-color: black;
 }
 
