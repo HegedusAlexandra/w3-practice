@@ -1,6 +1,6 @@
-console.log('this is a script file')
+console.log('this is a script file');
 
-console.log('load')
+console.log('load');
 
 /*console.dir(document)*/
 
@@ -8,7 +8,7 @@ async function loadEvent() {
     
     let countriesData = await fetch('https://restcountries.com/v3.1/all')
     let countriesJson = await countriesData.json()
-    console.log(countriesJson[111])
+    console.log(countriesJson[10])
 
 
     let countriesSection = document.getElementById('countries')
