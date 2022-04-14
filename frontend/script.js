@@ -8,7 +8,7 @@ async function loadEvent() {
     
     let countriesData = await fetch('https://restcountries.com/v3.1/all')
     let countriesJson = await countriesData.json()
-    console.log(countriesJson[10])
+    console.log(countriesJson[111])
 
 
     let countriesSection = document.getElementById('countries')
